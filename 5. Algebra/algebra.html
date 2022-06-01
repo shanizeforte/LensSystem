@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algebra</title>
+
+    <link rel = "stylesheet" href="algebra.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+  
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+    <script src="https://rawgithub.com/soulwire/sketch.js/master/js/sketch.min.js"></script>
+    <script type="text/javascript" src="algebra.js"></script>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = { tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}}; </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+    
+<body>
+    <div id="page_thumbnails_container">
+        <a class="thumbnail" href="../reality/reality.html">
+            <img  class="opened" src="a_Reality (lens).png">
+        </a>
+        <a class="thumbnail" href="../idealisation/idealisation.html">
+            <img class="opened" src="b_Idealization.PNG">
+        </a>
+        <a class="thumbnail" href="../geometric/geometric.html">
+            <img  src="c_raydiagram.jpg">
+        </a>
+        <a class="thumbnail">
+            <img  src="d_Algebraic.PNG">
+        </a>
+        <a class="thumbnail">
+            <img  src="e_Graphic.PNG">
+        </a>
+    </div>
+
+    
+
+    <div class="page_names">
+        <text class="opened">Reality</text>
+        <text class="opened" >Idealisation</text>
+        <text class="opened">Geometric</text>
+        <text class="opened">Algebra</text>
+        <text>Graphic</text>
+    </div> 
+    <div id="progress">
+    </div>
+    <div id="content">
+        <div id="section_2">
+            <div id="section_21">
+                <p class="xp" onclick="xplain(0)" > 
+                    From the given figure, <br> we notice that Δ ABO and Δ A'B'O are similar.<br>
+                    Therefore$\hskip 1em \frac{A'B'}{AB}=\frac{OB'}{OB}$    ..(1) <br>
+                    Similarly, Δ A'B'F and Δ OCF are similar, hence <br>
+                    $\hskip 1em \frac{A'B'}{OC}=\frac{FB'}{OF}$ <br>
+                    But OC=AB<br>
+                    Hence,$\hskip 1em \frac{A'B'}{AB}=\frac{FB'}{OF}$   ..(2)<br>
+                    Equating eq(1) and (2), we get<br>
+                    $\hskip 1em \frac{OB'}{OB}=\frac{FB'}{OF}$<br>
+                    $\hskip 1em =\frac{OB'-OF}{OF}$<br>
+                    Substituting the sign convention, we get<br>
+                    OB = -u,  OB' = v and OF = f <br>
+                    $\hskip 1em \frac{v}{-u}=\frac{v-f}{f}$<br>
+                    vf=-uv + uf <br>
+                    Or, uv=uf-vf <br>
+                    Dividing both the sides by uvf, we get<br>
+                    $\hskip 1em \frac{uv}{uvf}=\frac{uf}{uvf}-\frac{vf}{uvf}$<br>
+                    <bold>$\hskip 1em \frac{1}{f}=\frac{1}{v} - \frac{1}{u}$<br></bold>
+                    <div id="progress">    </div>
+                </p>
+            </div>
+        </div>
+    </div> 
+            <!-- <div id="section_22">
+                <i>click on coloured equations for hints</i>
+                <div id="exp0">
+                    <p> Torque , $ \tau=  r\times F $ </p>
+                    <p>Torque from gravity , $$\tau_{g}=  L \times -mg = -mgLsin\theta$$</p>
+                    <P>Torque from buoyant force , $$\tau_{b}=  L \times \rho _{f}Vg = \rho _{f}VgLsin\theta$$</P>
+
+                </div>
+                <div id="exp1">
+                    <p>for the pendulum,$$I = mL^{2} $$ </p>
+                    <p> and $$\alpha = \frac{d^{2}\theta }{dt^{2}} ,\hskip 1em v = \frac{d\theta }{dt} $$</p>
+                    <p> $$\Rightarrow mL^{2}\frac{d^{2}\theta }{dt^{2}} = -(mg_{e}Lsin\theta + a\frac{d\theta }{dt}L)$$</p>
+
+                </div>
+            </div>
+        </div> -->
+
+
+    
+        <!--navigation-->
+        <a id="left" class="navigation" href="../geometric/geometric.html">
+            <img src="triangle_l.png">
+        </a>
+        <a id="right" class="navigation" href="../Graphic/pendulum.html">
+            <img src="triangle_r.png">
+        </a>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idealisation</title>
+    <link rel = "stylesheet" href="idealisation.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+
+  </head>
+
+<body>
+    <div id="page_thumbnails_container">
+        <a class="thumbnail" href="../reality/reality.html">
+            <img  class="opened" src="a_Reality (lens).png">
+        </a>
+        <a class="thumbnail" href="../idealisation/idealisation.html">
+            <img class="opened" src="b_Idealization.PNG">
+        </a>
+        <a class="thumbnail" href="../geometric/geometric.html">
+            <img  src="c_raydiagram.jpg">
+        </a>
+        <a class="thumbnail">
+            <img  src="d_Algebraic.PNG">
+        </a>
+        <a class="thumbnail">
+            <img  src="e_Graphic.PNG">
+        </a>
+    </div>
+    <div class="page_names">
+        <text class="opened">Reality</text>
+        <text class="opened" >Idealisation</text>
+        <text>Geometric</text>
+        <text>Algebra</text>
+        <text>Graphic</text>
+    </div> 
+    <div id="progress"></div>
+    <div id="content">
+        <div id="section_1">
+            <p id="heading"><b>Idealisation</b></p>
+            Idealisation means we assume facts about the phenomenon being modelled that are strictly false to make models easier to understand and solve.
+           <br><br>
+            Let's discard some parameters and other constraints to reach a simple (ideal) model:
+                <p id="descript">
+                <!-- <ul>
+                    <li> Object        </li>
+                    <li>Optical element</li> 
+                    <li> Homogenous medium or vacuum </li>
+                </ul><br> -->
+                <!-- </p>
+            <br><b>Attach a coordinate system</b> </br> -->
+            
+            <input type="checkbox" id="ankle" class="switch">
+            <label for="ankle"> Monochromatic Light </label><br>
+            <input type="checkbox" id="length" class="switch"> 
+            <label for="length"> Homogeneity of Medium </label><br>
+            <input type="checkbox" id="boy" class="switch">
+            <label for="boy"> Marginal Rays </label><br>
+            <input type="checkbox" id="amp" class="switch">
+            <label for="amp"> 1-D </label><br>            
+            <input type="checkbox" id="vis" class="switch">
+            <label for="vis"> Thin, Ideal Lens </label><br><br>
+
+            
+
+            <!-- <b>Adjust timescale :</b><br>
+            <input type="range" id="slider" min="0" max="1" step="0.01" value="1" oninput="timeChanger(this.value)"> -->
+            
+            <!-- <div class="col-md-6 vh-100" style="padding: 10px;"> -->
+                                              
+        
+
+            <!-- <b>Use the slider to idealise!</b> <br><br>
+            <input type="range" class="slider" min="0" max="1" step="0.01" value="0" oninput="Changer(this.value)"> -->
+        </div>
+         
+        </style>  
+
+        <div id="section_2">
+            <figure class="static">
+            <img class= "img" id="a1" src="1b.png" style="visibility:hidden"/>
+            <img class= "img" id="a2" src="1a.PNG" style="visibility:hidden"/>
+            <img class= "img" id="a3" src="2b.PNG" style="visibility:hidden"/>
+            <img class= "img" id="a4" src="4c.PNG" style="visibility:hidden"/>
+            <img class= "img" id="a5" src="5d.png" style="visibility:hidden"/>
+            </figure>
+         </div>
+    </div> 
+    <div id="progress"></div>
+        <!--navigation-->
+        <a id="left" class="navigation" href="../reality/reality.html">
+            <img src="triangle_l.png">
+        </a>
+        <a id="right" class="navigation" href="../geometric/geometric.html">
+            <img src="triangle_r.png">
+        </a>
+        
+</body>
+<script type="text/javascript" src="idealisation.js"></script>
+</html>
